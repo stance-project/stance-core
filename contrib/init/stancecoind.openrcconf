@@ -1,0 +1,33 @@
+# /etc/conf.d/stancecoind: config file for /etc/init.d/stancecoind
+
+# Config file location
+#STANCECOIND_CONFIGFILE="/etc/stancecoin/stancecoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $STANCECOIND_USER)
+#STANCECOIND_PIDDIR="/var/run/stancecoind"
+
+# What filename to give the pidfile
+#STANCECOIND_PIDFILE="${STANCECOIND_PIDDIR}/stancecoind.pid"
+
+# Where to write stancecoind data (be mindful that the blockchain is large)
+#STANCECOIND_DATADIR="/var/lib/stancecoind"
+
+# User and group to own stancecoind process
+#STANCECOIND_USER="stancecoin"
+#STANCECOIND_GROUP="stancecoin"
+
+# Path to stancecoind executable
+#STANCECOIND_BIN="/usr/bin/stancecoind"
+
+# Nice value to run stancecoind under
+#STANCECOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#STANCECOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for stancecoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+STANCECOIND_SIGTERM_TIMEOUT=60

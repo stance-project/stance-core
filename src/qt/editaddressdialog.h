@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2018 The Bitcoin Core developers
+// Copyright (c) 2011-2018 The Stancecoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_EDITADDRESSDIALOG_H
-#define BITCOIN_QT_EDITADDRESSDIALOG_H
+#ifndef STANCECOIN_QT_EDITADDRESSDIALOG_H
+#define STANCECOIN_QT_EDITADDRESSDIALOG_H
 
 #include <QDialog>
 
@@ -56,4 +56,4 @@ private:
     QString address;
 };
 
-#endif // BITCOIN_QT_EDITADDRESSDIALOG_H
+#endif // STANCECOIN_QT_EDITADDRESSDIALOG_H
