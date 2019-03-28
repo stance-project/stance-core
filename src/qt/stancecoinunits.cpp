@@ -17,7 +17,7 @@ StancecoinUnits::StancecoinUnits(QObject *parent):
 QList<StancecoinUnits::Unit> StancecoinUnits::availableUnits()
 {
     QList<StancecoinUnits::Unit> unitlist;
-    unitlist.append(BTC);
+    unitlist.append(SNXT);
     unitlist.append(mBTC);
     unitlist.append(uBTC);
     unitlist.append(SAT);
@@ -28,7 +28,7 @@ bool StancecoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case BTC:
+    case SNXT:
     case mBTC:
     case uBTC:
     case SAT:
@@ -42,7 +42,7 @@ QString StancecoinUnits::longName(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("BTC");
+    case SNXT: return QString("SNXT");
     case mBTC: return QString("mBTC");
     case uBTC: return QString::fromUtf8("µBTC (bits)");
     case SAT: return QString("Satoshi (sat)");
@@ -64,7 +64,7 @@ QString StancecoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Stancecoins");
+    case SNXT: return QString("Stancecoins");
     case mBTC: return QString("Milli-Stancecoins (1 / 1" THIN_SP_UTF8 "000)");
     case uBTC: return QString("Micro-Stancecoins (bits) (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     case SAT: return QString("Satoshi (sat) (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
@@ -76,7 +76,7 @@ qint64 StancecoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case BTC: return 100000000;
+    case SNXT: return 100000000;
     case mBTC: return 100000;
     case uBTC: return 100;
     case SAT: return 1;
@@ -88,7 +88,7 @@ int StancecoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case BTC: return 8;
+    case SNXT: return 8;
     case mBTC: return 5;
     case uBTC: return 2;
     case SAT: return 0;

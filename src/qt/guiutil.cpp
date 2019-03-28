@@ -157,7 +157,7 @@ bool parseStancecoinURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!StancecoinUnits::parse(StancecoinUnits::BTC, i->second, &rv.amount))
+                if(!StancecoinUnits::parse(StancecoinUnits::SNXT, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -188,7 +188,7 @@ QString formatStancecoinURI(const SendCoinsRecipient &info)
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(StancecoinUnits::format(StancecoinUnits::BTC, info.amount, false, StancecoinUnits::separatorNever));
+        ret += QString("?amount=%1").arg(StancecoinUnits::format(StancecoinUnits::SNXT, info.amount, false, StancecoinUnits::separatorNever));
         paramCount++;
     }
 

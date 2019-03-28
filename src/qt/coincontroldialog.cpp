@@ -529,7 +529,7 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
     }
 
     // actually update labels
-    int nDisplayUnit = StancecoinUnits::BTC;
+    int nDisplayUnit = StancecoinUnits::SNXT;
     if (model && model->getOptionsModel())
         nDisplayUnit = model->getOptionsModel()->getDisplayUnit();
 

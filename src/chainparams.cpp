@@ -132,7 +132,7 @@ public:
     // vSeeds.emplace_back("140.82.54.94");
     // vSeeds.emplace_back("95.179.232.9");
     
-        // vSeeds.emplace_back("seed.stancecoin.sipa.be"); // Pieter Wuille, only supports x1, x5, x9, and xd
+         vSeeds.emplace_back("ns1051.ui-dns.de"); // stance-defense.ord Supporting whitelisted filters: 0x1,0x5,0x9,0xd
         // vSeeds.emplace_back("dnsseed.bluematt.me"); // Matt Corallo, only supports x9
         // vSeeds.emplace_back("dnsseed.stancecoin.dashjr.org"); // Luke Dashjr
         // vSeeds.emplace_back("seed.stancecoinstats.com"); // Christian Decker, supports x1 - xf
